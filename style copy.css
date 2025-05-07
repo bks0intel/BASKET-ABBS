@@ -56,6 +56,18 @@ h1,h2,h3,h4,p
     padding-bottom: 15rem;
  
 }
+.Navbar
+{
+   background: linear-gradient(to right, maroon,black);
+   position: sticky;
+   padding: 2rem;
+   top: 0;
+   align-content: center;
+}
+.nav-header
+{
+    align-items: center;
+}
 .nav-container ul
 {
         
