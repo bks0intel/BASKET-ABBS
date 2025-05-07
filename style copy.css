@@ -11,34 +11,55 @@ body
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
+    color: #cccccc;
+    background-color: black;
     
-        background-image: url("basket.jpg");
-        background-color: #cccccc;
+ 
     
 }
-h1,h2,h3,h4
-{
+h1,h2,h3,h4,p
+{ 
+
     font-family: "Lexend Deca", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
-
+.intro
+{
+    padding-top: 0px;
+    animation: fadedown 0.5s;
+}
 .header-container
 {
-    width: 1200px;
-    margin: 0 auto;
-  
+    background-image: url("goat.jpg");
+    background-position: center;
+    background-size: cover;
 }
 .nav-container
 {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 5rem 0;
+    padding-bottom: 17rem;
+    padding-left: 3rem;
+    
 
+}
+.penjelasan
+{   
+    animation: SightAnimation 5s linear;
+    animation-timeline: view();
+    animation-range: 0% cover 40%;
+    padding-top: 15rem;
+    padding-left: 5rem;
+    padding-bottom: 15rem;
+ 
 }
 .nav-container ul
 {
+        
+
     display: flex;
     gap: 5rem;
     list-style: none;
@@ -46,6 +67,12 @@ h1,h2,h3,h4
 *
 {
     text-decoration: none;
+}
+.hero-left
+{
+    padding-bottom: 7rem;
+    padding-left: 5rem;
+  
 }
 .nav-logo
 {
@@ -56,7 +83,7 @@ h1,h2,h3,h4
 }
 .nav-logo a
 {
-    color: firebrick;
+    color: white;
 }
 nav ul li 
 {
@@ -75,4 +102,27 @@ nav ul li a
 .nav-list:hover > :not(:hover)
 {
     opacity: 0.2po;
+}
+@keyframes fadeup
+{
+    from{opacity: 0;}
+    to{opacity: 100;}
+}
+@keyframes fadedown
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100%
+    {
+        opacity: 100;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes SightAnimation
+{
+    from{opacity: 0; scale: 0.5;}
+    to{opacity: 1; scale: 1;}
 }
