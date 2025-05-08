@@ -6,6 +6,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+html
+{
+    scroll-behavior: smooth;
+
+}
 body
 {
     font-family: "Poppins", sans-serif;
@@ -16,6 +21,11 @@ body
     
  
     
+}
+.home
+{
+    padding-bottom: 9rem;
+    padding: 16rem;
 }
 h1,h2,h3,h4,p
 { 
@@ -35,6 +45,7 @@ h1,h2,h3,h4,p
     background-image: url("goat.jpg");
     background-position: center;
     background-size: cover;
+    padding: 0%;
 }
 .nav-container
 {
@@ -56,17 +67,50 @@ h1,h2,h3,h4,p
     padding-bottom: 15rem;
  
 }
+.Prestasi
+{
+    animation: SightAnimation 5s linear;
+    animation-timeline: view();
+    animation-range: 0% cover 40%;
+    padding-top: 15rem;
+    padding-left: 5rem;
+    padding-bottom: 15rem;
+}
 .Navbar
 {
 
-   background: linear-gradient(to right, white,black);
-   
-   padding: 30px 10%;
+   background: transparent;
+   backdrop-filter: blur(10px);
+   position: sticky;
+   top: 0px;
+   padding: 10px 10%;
    align-items: center;
    display: flex;
    justify-content: space-between;
+   color: white;
+
+
    
 
+}
+.nav-links
+{
+    list-style: none;
+}
+.nav-links li 
+{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+.nav-links  li a
+{
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover
+{
+
+    color: maroon;
 }
 .nav-header
 {
@@ -86,7 +130,7 @@ h1,h2,h3,h4,p
 }
 .hero-left
 {
-    padding-bottom: 7rem;
+    padding-bottom: 10rem;
     padding-left: 5rem;
   
 }
@@ -107,10 +151,7 @@ nav ul li
     align-items: center;
 
 }
-nav ul li a
-{
-    color: aquamarine;
-}
+
 .nav-item:hover
 {
     color: firebrick;
@@ -142,9 +183,13 @@ nav ul li a
     from{opacity: 0; scale: 0.5;}
     to{opacity: 1; scale: 1;}
 }
-li,a,button
+ul,li,a,button
 {
     font-weight: 500;
     font-size: 16px;
-    color: aliceblue;
+    color: white;
+}
+.social-media
+{
+    padding: 3rem;
 }
