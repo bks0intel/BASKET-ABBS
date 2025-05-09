@@ -59,9 +59,6 @@ h1,h2,h3,h4,p
 }
 .penjelasan
 {   
-    animation: SightAnimation 5s linear;
-    animation-timeline: view();
-    animation-range: 0% cover 40%;
     padding-top: 15rem;
     padding-left: 5rem;
     padding-bottom: 15rem;
@@ -69,9 +66,6 @@ h1,h2,h3,h4,p
 }
 .Prestasi
 {
-    animation: SightAnimation 5s linear;
-    animation-timeline: view();
-    animation-range: 0% cover 40%;
     padding-top: 15rem;
     padding-left: 5rem;
     padding-bottom: 15rem;
@@ -88,10 +82,15 @@ h1,h2,h3,h4,p
    display: flex;
    justify-content: space-between;
    color: white;
+   overflow: hidden;
 
 
    
 
+}
+.coach
+{
+    left: 2px;
 }
 .nav-links
 {
